@@ -187,7 +187,6 @@ const Hero = () => {
           </Footer>
         </HeroMain>
       </StyledContainer>
-      )}
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Suspense, lazy, useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import Layout from "./Layout/Layout";
 import Loading from "./Components/PreLoader/PreLoader";
 const Hero = React.lazy(() => import("./Components/Hero/Hero"));
