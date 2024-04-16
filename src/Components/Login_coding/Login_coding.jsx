@@ -31,7 +31,6 @@ import {
   Button,
 } from "./Login_coding.styled";
 // import GoogleLogin from "react-google-login";
-import { gapi } from "gapi-script";
 
 const Login = () => {
   const [inputList, setinputList] = useState([]);
@@ -95,16 +94,16 @@ const Login = () => {
     }
   };
 
-  useEffect(() => {
-    function start() {
-      gapi.client.init({
-        clientId:
-          "79474543031-tmjo35916ufn421ej3u1i2ljao2apr4s.apps.googleusercontent.com",
-        scope: "",
-      });
-    }
-    gapi.load("client: auth2", start);
-  }, []);
+  // useEffect(() => {
+  //   function start() {
+  //     gapi.client.init({
+  //       clientId:
+  //         "79474543031-tmjo35916ufn421ej3u1i2ljao2apr4s.apps.googleusercontent.com",
+  //       scope: "",
+  //     });
+  //   }
+  //   gapi.load("client: auth2", start);
+  // }, []);
 
   const [popupStyle, showPopup] = useState("hide");
 

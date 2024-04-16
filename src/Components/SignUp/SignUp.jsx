@@ -29,20 +29,19 @@ import {
 } from "./SignUp.styled";
 
 
-import { gapi } from "gapi-script";
 import OTPVerificationPopup from "./OTPVerificationPopup";
 
 const SignUp = () => {
-  useEffect(() => {
-    function start() {
-      gapi.client.init({
-        clientId:
-          "79474543031-tmjo35916ufn421ej3u1i2ljao2apr4s.apps.googleusercontent.com",
-        scope: "",
-      });
-    }
-    gapi.load("client: auth2", start);
-  }, []);
+//   useEffect(() => {
+//     function start() {
+//       gapi.client.init({
+//         clientId:
+//           "79474543031-tmjo35916ufn421ej3u1i2ljao2apr4s.apps.googleusercontent.com",
+//         scope: "",
+//       });
+//     }
+//     gapi.load("client: auth2", start);
+//   }, []);
 
   const [popupStyle, showPopup] = useState("hide");
   const [name, setName] = useState("");
@@ -57,10 +56,10 @@ const SignUp = () => {
   const [otpPopup, setOtpPopup] = useState(false);
   const [isOtpCorrect, setIsOtpCorrect] = useState(false);
 
-  const popup = () => {
-    showPopup("login-popup");
-    setTimeout(() => showPopup("hide"), 3000);
-  };
+  // const popup = () => {
+  //   showPopup("login-popup");
+  //   setTimeout(() => showPopup("hide"), 3000);
+  // };
 
   const handleVerify = () => {
     // Email validation
