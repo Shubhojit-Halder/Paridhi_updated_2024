@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import baffle from "baffle";
 import {
   faFacebook,
   faInstagram,
@@ -8,7 +7,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
-  PreloaderVideoWrapper,
   HeroMain,
   CountdownContainer,
   CountdownItem,
@@ -25,7 +23,6 @@ import {
   StyledContainer,
   HT1,
 } from "./Hero.styled.js";
-import BackgroundAnimation from "../BackGroundAnimation/BackgroundAnimation.jsx";
 
 export const CountdownTimer = ({ targetDate }) => {
   const calculateTimeLeft = () => {
