@@ -25,7 +25,7 @@ from {
 `;
 
 export const StyledContainer = styled.div`
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   background-size: cover;
   background-position: center;
   height: 10vh;
