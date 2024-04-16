@@ -31,6 +31,7 @@ export const StyledContainer = styled.div`
   height: 10vh;
   width: 100%;
   position: fixed;
+  top:0;
   /* position: absolute; */
   z-index: 2;
   /* bottom: 90vh;
